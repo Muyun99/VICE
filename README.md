@@ -4,15 +4,6 @@
 
 Expected calibration error (ECE) is a popular metric to measure and calibrate the inconsistency between the classification performance and the probabilistic class confidence. However, ECE is inadequate to reveal why the deep model makes inconsistent predictions in specific samples. On the other hand, the class activation maps (CAMs) provide visual interpretability, highlighting focused regions of network attention. We discover that the quality of CAMs is also inconsistent with the model’s final performance. In this paper, to further analyze this phenomenon, we propose a novel metric—VICE (Visual Consistency), to measure the consistency between performance and visual interpretability. Through extensive experiments with ECE and VICE, we disclose that the model architectures, the pre-training schemes, and the regularization manners influence VICE. These phenomena deserve our attention, and the community should focus more on a better trade-off in model performance and interpretability
 
-## Results
-
-<img src="Fig/figs/VICE_ResNet-50-PyTorch-Pretrain.png" style="zoom:5%;" />
-
-<img src="Fig/figs/ViT-Small_ML_ECE.png" style="zoom: 5%;" />
-
-<img src="Fig/figs/19.png" style="zoom:25%;" />
-
-
 
 # 1. Prepare the dataset
 
@@ -117,3 +108,12 @@ python compute_ECE.py config/resnet50.py --options "network=resnet50" "session_n
 
 python compute_VICE.py --dir_csv miou_loss_csv/miou_loss_resnet50_PyTorch_pretrain_lr_0.01_best_val.csv --plot_title ResNet-50-PyTorch-Pretrain
 ```
+
+
+## Results
+
+<img src="Fig/figs/VICE_ResNet-50-PyTorch-Pretrain.png" style="zoom:5%;" />
+
+<img src="Fig/figs/ViT-Small_ML_ECE.png" style="zoom: 5%;" />
+
+<img src="Fig/figs/19.png" style="zoom:25%;" />
