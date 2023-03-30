@@ -1,0 +1,1 @@
+python run_mae_vis.py /home/muyun99/github/CVPR/pipeline/reference/train_cls/TWSS/voc12/VOC2012/JPEGImages/2007_000027.jpg vis /home/muyun99/github/CVPR/pipeline/reference/train_cls/TWSS/pretrain/MAE/pretrain_mae_vit_base_mask_0.75_400e.pth
